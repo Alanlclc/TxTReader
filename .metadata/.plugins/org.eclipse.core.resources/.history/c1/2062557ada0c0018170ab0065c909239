@@ -1,0 +1,19 @@
+package cn.ksb.minitxt.services;
+
+import java.io.Serializable;
+
+import cn.ksb.minitxt.client.BaseService;
+import cn.ksb.minitxt.client.Service;
+
+public class StartService extends BaseService<Serializable> {
+	private String OUTPUT_SIGN_LINE = "----------------------";
+	
+	
+	
+	@Override
+	public Service<? extends Serializable> execute() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

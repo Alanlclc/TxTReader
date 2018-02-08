@@ -1,0 +1,10 @@
+package cn.ksb.minitxt.server;
+
+public class ClientMain {
+	/*
+	 * 客户端程序入口
+	 */
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="15" version="2.0">
 <workbenchAdvisor/>
-<window height="728" width="1024" x="52" y="0">
+<window height="730" width="1115" x="107" y="159">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
 <coolbarLayout locked="0">
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="262" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="178" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="com.genuitec.eclipse.j2eedt.core.ejb" itemType="typeToolBarContribution" x="55" y="22"/>
 <coolItem id="com.genuitec.eclipse.uml.actions" itemType="typeToolBarContribution" x="61" y="22"/>
@@ -21,11 +21,13 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="175" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="101" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="101" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="107" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="198" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -41,14 +43,10 @@
 </editors>
 <views>
 <view id="com.genuitec.eclipse.ui.HTMLView" partName="Web Browser"/>
-<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" partName="Snippets"/>
+<view id="org.eclipse.jdt.ui.TypeHierarchy" partName="Hierarchy">
+<viewState hidefields="false" hidelocaltypes="false" hidenonpublic="false" hidestatic="false" link_editors="0" mv_vertical_scroll="0" orientation="3" qualified_names="0" ratio="350" showinherited="false" sortbydefiningtype="false" vertical_scroll="0" view="2" workingSetName=""/>
+</view>
 <view id="com.genuitec.eclipse.ast.deploy.core.serverview" partName="Servers"/>
-<view id="uky.article.imageviewer.views.ImageView" partName="Image Preview">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
-<viewState/>
-</view>
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
@@ -56,7 +54,12 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<expanded>
+<category IMemento.internal.id="Warnings (5 items)"/>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -64,13 +67,8 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
 </view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
-<viewState configured="true" group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" sortWorkingSets="false" workingSetName="Aggregate for window 1518078444594">
-<localWorkingSetManager>
-<workingSet editPageId="org.eclipse.jdt.internal.ui.OthersWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1518079593978_1" label="Other Projects" name="Other Projects"/>
-</localWorkingSetManager>
-<activeWorkingSet workingSetName="Other Projects"/>
+<viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="Aggregate for window 1518078444594">
 <customFilters userDefinedPatternsEnabled="false">
 <xmlDefinedFilters>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
@@ -99,12 +97,12 @@
 </customFilters>
 </viewState>
 </view>
-<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
-<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.genuitec.myeclipse.perspective.MyEclipsePerspectiveFactory" id="com.genuitec.myeclipse.perspective.myeclipseperspective" label="MyEclipse Java Enterprise"/>
 <alwaysOnActionSet id="com.genuitec.myeclipse.actions.deploytools"/>
@@ -166,6 +164,7 @@
 <show_view_action id="org.eclipse.ui.views.PropertySheet"/>
 <show_view_action id="org.eclipse.ui.views.ProblemView"/>
 <show_view_action id="com.genuitec.eclipse.ui.HTMLView"/>
+<show_in_time id="org.eclipse.ui.views.ResourceNavigator" time="1518081004894"/>
 <new_wizard_action id="com.genuitec.eclipse.j2eedt.ui.wizard.EJBProjectCreationWizard"/>
 <new_wizard_action id="com.genuitec.eclipse.j2eedt.ui.wizard.NewEARProjectWizard"/>
 <new_wizard_action id="com.genuitec.eclipse.j2eedt.ui.wizard.WebProjectCreationWizard"/>
@@ -204,10 +203,6 @@
 <perspective_action id="com.genuitec.eclipse.uml.umlPerspective"/>
 <perspective_action id="com.genuitec.eclipse.web20.perspective"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="uky.article.imageviewer.views.ImageView"/>
-<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
-<view id="org.eclipse.ui.views.PropertySheet"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
 <view id="com.genuitec.eclipse.ui.HTMLView"/>
@@ -215,6 +210,7 @@
 <view id="com.genuitec.eclipse.ast.deploy.core.serverview"/>
 <view id="org.eclipse.search.ui.views.SearchView"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.jdt.ui.TypeHierarchy"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -230,25 +226,21 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.2" ratioLeft="200" ratioRight="800" relationship="2" relative="cvslocation"/>
+<info part="org.eclipse.ui.editorss" ratio="0.26789588" ratioLeft="247" ratioRight="675" relationship="2" relative="cvslocation"/>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@91a0c3" ratio="0.75" ratioLeft="600" ratioRight="200" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@d16dc8" ratio="0.54950494" ratioLeft="333" ratioRight="273" relationship="4" relative="org.eclipse.ui.internal.ViewStack@91a0c3">
-<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="bottom" ratio="0.7491749" ratioLeft="454" ratioRight="152" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.search.ui.views.SearchView" appearance="2" expanded="2">
+<info folder="true" part="bottom" ratio="0.6834171" ratioLeft="408" ratioRight="189" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="com.genuitec.eclipse.ui.HTMLView" label="Web Browser"/>
@@ -256,6 +248,7 @@
 <page content="com.genuitec.eclipse.ast.deploy.core.serverview" label="Servers"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
@@ -268,22 +261,20 @@
 </info>
 <info folder="true" part="topleft" ratio="0.39933994" ratioLeft="242" ratioRight="364" relationship="4" relative="cvslocation">
 <folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="Hierarchy"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
-<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
-</folder>
-</info>
-<info folder="true" part="bottomleft" ratio="0.54950494" ratioLeft="333" ratioRight="273" relationship="4" relative="topleft">
-<folder activePageID="uky.article.imageviewer.views.ImageView" appearance="2" expanded="2">
-<page content="uky.article.imageviewer.views.ImageView" label="Image Preview"/>
-<page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="Snippets"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
 </presentation>
+</folder>
+</info>
+<info folder="true" part="bottomleft" ratio="0.54950494" ratioLeft="333" ratioRight="273" relationship="4" relative="topleft">
+<folder appearance="2" expanded="2">
+<page content="uky.article.imageviewer.views.ImageView" label="LabelNotFound"/>
+<page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -300,6 +291,9 @@
 <trimArea IMemento.internal.id="16384">
 <trimItem IMemento.internal.id="topleft"/>
 </trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -307,8 +301,55 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
-<mruList/>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LoginService.java" tooltip="NewMiniTxtClient/src/cn/ksb/minitxt/services/LoginService.java">
+<persistable path="/NewMiniTxtClient/src/cn/ksb/minitxt/services/LoginService.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Servers.java" tooltip="NewMiniTxtService/src/cn/ksb/minitxt/server/Servers.java">
+<persistable path="/NewMiniTxtService/src/cn/ksb/minitxt/server/Servers.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClientMain.java" tooltip="NewMiniTxtService/src/cn/ksb/minitxt/server/ClientMain.java">
+<persistable path="/NewMiniTxtService/src/cn/ksb/minitxt/server/ClientMain.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Constains.java" tooltip="NewMiniTxtService/commonsrc/cn/ksb/minitxt/common/constants/Constains.java">
+<persistable path="/NewMiniTxtService/commonsrc/cn/ksb/minitxt/common/constants/Constains.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StartService.java" tooltip="NewMiniTxtClient/src/cn/ksb/minitxt/services/StartService.java">
+<persistable path="/NewMiniTxtClient/src/cn/ksb/minitxt/services/StartService.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Init.java" tooltip="NewMiniTxtClient/src/cn/ksb/minitxt/client/Init.java">
+<persistable path="/NewMiniTxtClient/src/cn/ksb/minitxt/client/Init.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Init.java" tooltip="NewMiniTxtService/src/cn/ksb/minitxt/server/Init.java">
+<persistable path="/NewMiniTxtService/src/cn/ksb/minitxt/server/Init.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ServiceFactory.java" tooltip="NewMiniTxtClient/src/cn/ksb/minitxt/client/ServiceFactory.java">
+<persistable path="/NewMiniTxtClient/src/cn/ksb/minitxt/client/ServiceFactory.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BaseService.java" tooltip="NewMiniTxtClient/src/cn/ksb/minitxt/client/BaseService.java">
+<persistable path="/NewMiniTxtClient/src/cn/ksb/minitxt/client/BaseService.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Service.java" tooltip="NewMiniTxtClient/src/cn/ksb/minitxt/client/Service.java">
+<persistable path="/NewMiniTxtClient/src/cn/ksb/minitxt/client/Service.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RegisterServer.java" tooltip="NewMiniTxtService/src/cn/ksb/minitxt/servers/RegisterServer.java">
+<persistable path="/NewMiniTxtService/src/cn/ksb/minitxt/servers/RegisterServer.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DefaultCommunicatorImp1.java" tooltip="NewMiniTxtService/clientsrc/cn/ksb/minitxt/clientutils/DefaultCommunicatorImp1.java">
+<persistable path="/NewMiniTxtService/clientsrc/cn/ksb/minitxt/clientutils/DefaultCommunicatorImp1.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Communicator.java" tooltip="NewMiniTxtService/clientsrc/cn/ksb/minitxt/clientutils/Communicator.java">
+<persistable path="/NewMiniTxtService/clientsrc/cn/ksb/minitxt/clientutils/Communicator.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DataTransfer.java" tooltip="NewMiniTxtService/commonsrc/cn/ksb/minitxt/common/entity/DataTransfer.java">
+<persistable path="/NewMiniTxtService/commonsrc/cn/ksb/minitxt/common/entity/DataTransfer.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LoginService.java" tooltip="NewMiniTxtService/src/cn/ksb/minitxt/servers/LoginService.java">
+<persistable path="/NewMiniTxtService/src/cn/ksb/minitxt/servers/LoginService.java"/>
+</file>
+</mruList>
 </workbench>

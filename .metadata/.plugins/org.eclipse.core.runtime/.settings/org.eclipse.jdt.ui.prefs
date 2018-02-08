@@ -1,4 +1,4 @@
-#Thu Feb 08 17:23:48 CST 2018
+#Thu Feb 08 23:42:07 CST 2018
 content_assist_proposals_foreground=0,0,0
 spelling_locale_initialized=true
 org.eclipse.jdt.ui.text.templates_migrated=true
@@ -16,4 +16,5 @@ content_assist_proposals_background=255,255,255
 content_assist_number_of_computers=15
 useQuickDiffPrefPage=true
 org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.util.Map"><rhs name\="java.util.HashMap"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.io.FileInputStream"/><rhs name\="java.io.FileOutputStream"/></lhs><lhs name\="java.io.InputStream"><rhs name\="java.io.FileInputStream"/></lhs><lhs name\="cn.ksb.minitxt.common.entity.User"><rhs name\="cn.ksb.minitxt.common.entity.User"/></lhs><lhs name\="javax.xml.transform.Source"><rhs name\="javax.xml.transform.dom.DOMSource"/></lhs><lhs name\="javax.xml.transform.Result"><rhs name\="javax.xml.transform.stream.StreamResult"/></lhs><lhs name\="java.io.Flushable"><rhs name\="java.io.FileOutputStream"/></lhs><lhs name\="java.io.OutputStream"><rhs name\="java.io.FileOutputStream"/></lhs><lhs name\="cn.ksb.minitxt.common.entity.DataTransfer"><rhs name\="cn.ksb.minitxt.common.entity.DataTransfer"/></lhs><lhs name\="java.lang.CharSequence"><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="java.lang.AbstractStringBuilder"><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="java.lang.Appendable"><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="java.util.Iterator"><rhs name\="java.util.Scanner"/></lhs><lhs name\="cn.ksb.minitxt.clientutils.Communicator"><rhs name\="cn.ksb.minitxt.clientutils.DefaultCommunicatorImp1"/></lhs><lhs name\="cn.ksb.minitxt.clientutils.DefaultCommunicatorImp1"><rhs name\="cn.ksb.minitxt.clientutils.DefaultCommunicatorImp1"/></lhs></history>
 org.eclipse.jdt.ui.text.code_templates_migrated=true

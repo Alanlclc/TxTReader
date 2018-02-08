@@ -1,0 +1,17 @@
+package cn.ksb.minitxt.services;
+
+import java.io.Serializable;
+
+import cn.ksb.minitxt.client.BaseService;
+import cn.ksb.minitxt.client.Service;
+import cn.ksb.minitxt.common.entity.User;
+
+public class LoginService extends BaseService<User> {
+
+	@Override
+	public Service<? extends Serializable> execute() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

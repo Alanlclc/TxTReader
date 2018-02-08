@@ -35,6 +35,10 @@ public class DataTransfer<T extends Serializable> implements java.io.Serializabl
 	public void setResult(int result) {
 		this.result = result;
 	}
+
+	public DataTransfer() {
+		super();
+	}
 	
 	
 }

@@ -1,0 +1,5 @@
+package cn.ksb.minitxt.client;
+
+public class BaseService implements Service<T> {
+
+}

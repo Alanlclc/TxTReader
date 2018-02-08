@@ -1,0 +1,5 @@
+package cn.ksb.minitxt.client;
+
+public interface Service {
+	public void execute();
+}
