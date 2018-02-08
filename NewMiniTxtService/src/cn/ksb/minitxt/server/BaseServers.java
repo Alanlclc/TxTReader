@@ -41,6 +41,7 @@ public abstract class BaseServers<T extends Serializable> implements Servers<T> 
 		}
 	}
 	
+	
 	@Override
 	public void destory() throws IOException {
 		in.close();

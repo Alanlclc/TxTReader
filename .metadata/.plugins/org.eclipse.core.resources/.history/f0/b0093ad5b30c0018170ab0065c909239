@@ -1,0 +1,55 @@
+package cn.ksb.minitxt.server;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
+public class ServiceFactory {
+//	path是存储所有功能类   的存储文件路径；
+	private static final String path = Init.getProperty("");
+	private static Map<String, String> services = new HashMap<String, String>();
+	static{
+		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+		DocumentBuilder db = null;
+		Document doc = null;
+		try {
+			db = dbf.newDocumentBuilder();
+//			提取文件信息
+//			读取存储类的地址和功能的键值对；
+//			是一个Property文件,存储以上所有文件的路径
+//			将文件和路劲分开，以便将来的路径变更所导致的项目代码影响
+			doc = db.parse(new FileInputStream(path));
+			NodeList servicenNodes = doc.getElementsByTagName("service");
+			for (int i = 0; i < servicenNodes.getLength() ; i++) {
+				Node node = servicenNodes.item(i);
+				services.put(node.getAttributes().getNamedItem("key").
+						getNodeValue().trim()
+						, node.getFirstChild().getNodeValue().trim());
+			}
+		} catch (ParserConfigurationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SAXException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}

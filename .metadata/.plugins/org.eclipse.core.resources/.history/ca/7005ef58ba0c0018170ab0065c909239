@@ -1,0 +1,5 @@
+package cn.ksb.minitxt.utils;
+
+public class UserUtils {
+//	1、读取现有XML中的用户信息
+}

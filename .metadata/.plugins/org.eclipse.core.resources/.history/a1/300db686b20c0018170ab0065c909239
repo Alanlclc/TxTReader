@@ -1,0 +1,33 @@
+package cn.ksb.minitxt.server;
+
+import java.io.FileInputStream;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+
+public class ServiceFactory {
+	private static Map<String, String> services = new HashMap<String, String>();
+	static{
+		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+		DocumentBuilder db = null;
+		Document dbc = null;
+		try {
+			db = dbf.newDocumentBuilder();
+//			读取存储类的地址和功能的键值对；
+//			是一个Property文件,存储以上所有文件的路径
+//			将文件和路劲分开，以便将来的路径变更所导致的项目代码影响
+			doc = db.parse(new FileInputStream(""));
+			
+			
+		} catch (ParserConfigurationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}

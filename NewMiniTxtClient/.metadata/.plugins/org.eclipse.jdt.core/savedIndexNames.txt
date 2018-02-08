@@ -1,0 +1,12 @@
+INDEX VERSION 1.126+F:\Workspaces\TxTRender\NewMiniTxtClient\.metadata\.plugins\org.eclipse.jdt.core
+397988944.index
+2354088618.index
+841067199.index
+2066917923.index
+3527221378.index
+1175858932.index
+4282714214.index
+2653350429.index
+103494259.index
+3571926480.index
+292770986.index

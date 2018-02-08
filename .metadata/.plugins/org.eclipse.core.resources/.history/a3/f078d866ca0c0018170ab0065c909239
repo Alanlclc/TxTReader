@@ -1,0 +1,22 @@
+package cn.ksb.minitxt.servers;
+
+import java.io.IOException;
+
+import cn.ksb.minitxt.common.entity.User;
+import cn.ksb.minitxt.server.BaseServers;
+import cn.ksb.minitxt.utils.UserUtils;
+
+public class LoginService extends BaseServers<User> {
+
+	@Override
+	public void excuted() throws IOException {
+		// TODO 编写登录相关的代码
+		int result = UserUtils.doLogin(getData());
+//		登录成功
+//		1、查询小说分类，作为返回结果返回客户端
+//		2、返回成功    由客户端重新发送请求，获取小说分类
+		 
+		
+	}
+
+}

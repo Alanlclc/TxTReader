@@ -1,0 +1,31 @@
+package cn.ksb.minitxt.server;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+
+public class ServiceFactory {
+	private static Map<String, String> services = new HashMap<String, String>();
+	static{
+		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+		DocumentBuilder db = null;
+		Document dbc = null;
+		try {
+			db = dbf.newDocumentBuilder();
+//			读取存储类的地址和功能的键值对；
+//			是一个Property文件
+			doc = db.parse("");
+			
+			
+		} catch (ParserConfigurationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}
